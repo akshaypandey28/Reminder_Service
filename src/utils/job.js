@@ -12,7 +12,7 @@ const sender = require('../config/emailConfig');
  */
 
 const setUpJobs = () => {
-    cron.schedule('*/1 * * * *', async () => {
+    cron.schedule('*/5 * * * *', async () => {
         console.log("Checking for pending emails which are expected to be sent by now");
 
         const response = await emailService.fetchPendingEmails(); //it's an array of pending email tickets
