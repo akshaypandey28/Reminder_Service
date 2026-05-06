@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   NotificationTicket.init({
-      subject: {
+    subject: {
       type: DataTypes.STRING,
       allowNull: false
     },
